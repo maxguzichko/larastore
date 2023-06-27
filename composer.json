@@ -1,4 +1,12 @@
 {
     "name": "maxguzichko/larastore",
-    "description": "Online store for Laravel"
+    "description": "Online store for Laravel",
+    "require": {
+        "php": "^8.1",
+    },
+    "autoload": {
+        "psr-4": {
+            "Maxguzichko\\Larastore\\": "src/"
+        }
+    }
 }
