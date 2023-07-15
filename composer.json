@@ -1,6 +1,11 @@
 {
     "name": "maxguzichko/larastore",
     "description": "Online store for Laravel",
+    "scripts": {
+        "post-install-cmd": [
+            "[ -d public/vendor/larastore/images ] || (mkdir -p public/vendor && mkdir -p public/vendor/larastore && mkdir public/vendor/larastore/images && cp vendor/maxguzichko/larastore/.gitignore.example public/vendor/larastore/images/.gitignore)"
+        ]
+    },
     "require": {
         "php": "^8.1"
     },
